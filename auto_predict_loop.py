@@ -61,7 +61,7 @@ def main() -> bool:
 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-    # === ЭТАП 1: ПРОВЕРКА СТАРЫХ ПРОГНОЗОВ ===
+    
     print("\n📊 ЭТАП 1: Проверка предыдущих прогнозов")
     print("-" * 80)
 
@@ -349,3 +349,4 @@ def main() -> bool:
 if __name__ == "__main__":
     success = main()
     sys.exit(0 if success else 1)
+

@@ -57,7 +57,7 @@ def classify_vol_regime(vol_regime):
 
 
 def classify_trend(trend_strength):
-    # простая грубая классификация по 72h-тренду
+    
     if trend_strength > 0:
         return "up_trend"
     elif trend_strength < 0:
@@ -140,3 +140,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

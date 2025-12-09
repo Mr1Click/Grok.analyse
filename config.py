@@ -41,6 +41,7 @@ ROLLING_WINDOWS = [6, 12, 24, 72, 168]           # Rolling окна
 # === ПАРАМЕТРЫ WINSORIZATION ===
 WINSOR_LIMITS = [0.01, 0.01]  # 1% с каждой стороны
 
-# Создание директорий
+
 os.makedirs('data', exist_ok=True)
+
 os.makedirs('models', exist_ok=True)

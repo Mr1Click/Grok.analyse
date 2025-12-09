@@ -26,7 +26,7 @@ print("="*80)
 print("ШАГ 1: Проверка предыдущих прогнозов")
 print("="*80)
 
-# Загружаем текущую цену для проверки
+
 df_check = load_and_update_data()
 current_price_for_check = df_check['close'].iloc[-1]
 
@@ -205,4 +205,5 @@ try:
 except Exception as e:
     print(f"Ошибка: {e}")
     import traceback
+
     traceback.print_exc()

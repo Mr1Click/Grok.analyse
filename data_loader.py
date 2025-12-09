@@ -103,7 +103,8 @@ def load_and_update_data():
         if len(missing) > 10:
             print(f"Осталось {len(missing) - 10} пропусков (пропущено для скорости)")
 
-    # Сохранение
+    
     combined.to_csv(DATA_PATH)
     print(f"Кэш обновлён: {len(combined)} строк")
+
     return combined

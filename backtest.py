@@ -49,9 +49,7 @@ def build_full_dataset() -> pd.DataFrame:
     return df
 
 
-# --------------------------------
-# 2. Локальный препроцессинг
-# --------------------------------
+
 
 
 def clean_inf_nan(X: pd.DataFrame) -> pd.DataFrame:
@@ -302,3 +300,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

@@ -42,9 +42,7 @@ warnings.filterwarnings("ignore", category=FutureWarning)
 
 pl.seed_everything(42)
 
-# ============================================================================
-# HELPER FUNCTIONS
-# ============================================================================
+
 
 def clean_and_normalize(train_df, val_df, feature_cols):
     """Очистка, импутация и нормализация данных"""
@@ -516,4 +514,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()

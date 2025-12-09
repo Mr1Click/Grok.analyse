@@ -17,7 +17,7 @@ print("="*80 + "\n")
 df = load_and_update_data()
 print(f"Исходные данные: {len(df)} строк\n")
 
-# Пошаговое добавление фичей с проверкой
+
 def check_inf(df, stage_name):
     inf_count = np.isinf(df.select_dtypes(include=[np.number])).sum().sum()
     if inf_count > 0:
@@ -93,5 +93,6 @@ if total_inf > 0:
     print("   Нужно добавить более агрессивную очистку в features.py")
 else:
     print("\n✅ Отлично! Inf значений нет")
+
 
 print("="*80)

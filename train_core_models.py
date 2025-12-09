@@ -25,12 +25,7 @@ from model import train_lgbm, train_regression
 
 
 def build_full_dataset() -> pd.DataFrame:
-    """
-    Собираем полный датасет для обучения:
-    - загружаем свечи и обогащаем фичами через единый build_feature_pipeline
-    - создаём таргеты
-    - фильтруем NaN/invalid таргеты
-    """
+    
     print("Загружаем и обогащаем данные для TRAIN...")
     df = load_and_update_data()
 
@@ -125,3 +120,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

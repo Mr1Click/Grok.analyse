@@ -7,10 +7,7 @@ from data_loader import load_and_update_data
 
 
 def load_predictions_db():
-    """
-    Пытаемся взять путь из config.PREDICTIONS_DB_PATH, если он есть.
-    Если нет – используем data/predictions_db.csv.
-    """
+   
     db_path = None
     try:
         from config import PREDICTIONS_DB_PATH  # type: ignore
@@ -339,3 +336,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

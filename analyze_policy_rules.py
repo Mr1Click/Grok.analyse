@@ -13,10 +13,7 @@ def load_predictions():
 
     df = pd.read_csv(PREDICTIONS_DB_PATH)
 
-    # приведение типов / названий (если нужно подогнать под твой формат — подправим)
-    # ожидаем колонки:
-    # timestamp, current_price, regression_pct, final_direction, final_confidence, final_pct,
-    # actual_price, actual_pct, final_correct, checked, ...
+    
     if "checked" in df.columns:
         df = df[df["checked"] == True].copy()
 
@@ -119,3 +116,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

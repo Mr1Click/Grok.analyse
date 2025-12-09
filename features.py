@@ -14,9 +14,7 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# ============================================================================
-# ШАГ 1: ИСПРАВЛЕНИЯ КРИТИЧЕСКИХ БАГОВ
-# ============================================================================
+
 
 # === 1. ТЕХНИЧЕСКИЕ ИНДИКАТОРЫ (без изменений, работает) ===
 def add_technical_indicators(df):
@@ -1128,5 +1126,6 @@ def build_feature_pipeline(
     # 6. Волатильность + режим (категория)
     df = add_realized_vol_if_missing(df)
     df = add_vol_regime_label(df)
+
 
     return df

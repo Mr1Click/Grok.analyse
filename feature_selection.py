@@ -41,7 +41,7 @@ def select_top_features_by_shap(
 
     shap_values = np.array(shap_values)
     if shap_values.ndim == 3:
-        # На всякий случай (мультиаутпут) — берём сумму по выходам
+        
         shap_values = shap_values.sum(axis=-1)
 
     # Средняя абсолютная важность по каждому признаку
@@ -83,3 +83,4 @@ def select_top_features_by_shap(
 
 if __name__ == "__main__":
     select_top_features_by_shap(top_k=80, min_importance_ratio=0.01)
+
